@@ -14,6 +14,8 @@
   width: 20%;
   height: 30%;
   padding: 10px;
+  border: 1px ;
+  box-shadow: 2px 10px 10px #9A9E9A; 
 	} 
 	
 	input[type=text], 
@@ -44,16 +46,23 @@
 	
 	.imgcontainer { 
 		text-align: center; 
-		margin: 24px 0 12px 0; 
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    left: 775px;
+    margin-top: -50px;
 	} 
 	
 	img.avatar { 
 		width: 40%; 
 		border-radius: 50%; 
+    border: 1px ;
+    box-shadow: 2px 10px 10px #9A9E9A; 
 	} 
 	
 	.container { 
 		padding: 16px; 
+    margin-top: 30%;
 	} 
 	
 	
@@ -61,26 +70,27 @@
 color: #ECC5B1;
 display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 25%;
   width: 40%;
   }
 
   .user_login_name{
   color: 	#939393;
   display: block;
+  margin-top: 0px;
   margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  text: bold;
+  margin-right: 30%;
+  width: 35%;
+  font-size: 20px;
   }
 
 </style> 
 <body> 
+  <div class="imgcontainer"> 
+    <img src= "avatar.png"
+      alt="Avatar" class="avatar"> 
+  </div> 
 	<form action="/action_page.php"> 
-		<div class="imgcontainer"> 
-			<img src= "avatar.png"
-				alt="Avatar" class="avatar"> 
-		</div> 
 		<div class="container"> 
       <b><p class="user_login_name">User Login</p></b>
 			<input type="text" placeholder="Username" name="uname" required> 
