@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+
+  body {
+  background-color: #B6DA31;
+   }	
+	form { 
+		border: 3px solid #f1f1f1; 
+    width: 20%;
+    background-color: #E8E8E8;
+    margin: auto;
+    margin: 5% 40%;
+  width: 20%;
+  height: 30%;
+  padding: 10px;
+	} 
+	
+	input[type=text], 
+	input[type=password] { 
+		width: 100%; 
+		padding: 12px 20px; 
+		margin: 8px 0; 
+		display: inline-block; 
+		border: 1px solid #ccc; 
+		box-sizing: border-box;
+    text-align: center; 
+    background-color:#D3D3D3;
+	} 
+	
+	button { 
+		background-color: #21D8D9; 
+		color: white; 
+		padding: 14px 20px; 
+		margin: 8px 0; 
+		border: none; 
+		cursor: pointer; 
+		width: 100%; 
+	} 
+	
+	button:hover { 
+		opacity: 0.8; 
+	} 
+	
+	.imgcontainer { 
+		text-align: center; 
+		margin: 24px 0 12px 0; 
+	} 
+	
+	img.avatar { 
+		width: 40%; 
+		border-radius: 50%; 
+	} 
+	
+	.container { 
+		padding: 16px; 
+	} 
+	
+	
+   .fp {
+color: #ECC5B1;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
+
+  .user_login_name{
+  color: 	#939393;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  text: bold;
+  }
+
+</style> 
+<body> 
+	<form action="/action_page.php"> 
+		<div class="imgcontainer"> 
+			<img src= "avatar.png"
+				alt="Avatar" class="avatar"> 
+		</div> 
+		<div class="container"> 
+      <b><p class="user_login_name">User Login</p></b>
+			<input type="text" placeholder="Username" name="uname" required> 
+			<input type="password" placeholder="Password" name="psw" required> 
+      <button type="submit">Login</button> 
+      <a href class="fp">Forgot password?</a>
+		</div> 
+		</div> 
+	</form> 
+
+</body> 
+
+</html> 
